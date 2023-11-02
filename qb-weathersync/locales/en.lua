@@ -1,0 +1,60 @@
+local Translations = {
+    weather = {
+        now_frozen = 'Počasí je nyní zamrzlé. ❄️',
+        now_unfrozen = 'Počasí již není zamrzlé. ☀️',
+        invalid_syntax = 'Neplatná syntaxe, správná syntaxe je: /počasí <typ-počasí> ',
+        invalid_syntaxc = 'Neplatná syntaxe, použijte /počasí <typPočasí>! ❌',
+        updated = 'Počasí bylo aktualizováno. ✅',
+        invalid = 'Neplatný typ počasí, platné typy počasí jsou: \nEXTRASUNNY CLEAR NEUTRAL SMOG FOGGY OVERCAST CLOUDS CLEARING RAIN THUNDER SNOW BLIZZARD SNOWLIGHT XMAS HALLOWEEN ',
+        invalidc = 'Neplatný typ počasí, platné typy počasí jsou: \nEXTRASUNNY CLEAR NEUTRAL SMOG FOGGY OVERCAST CLOUDS CLEARING RAIN THUNDER SNOW BLIZZARD SNOWLIGHT XMAS HALLOWEEN ',
+        willchangeto = 'Počasí se změní na: %{value}. 🔄',
+        accessdenied = 'Přístup k příkazu /počasí byl odepřen. ❌',
+    },
+    dynamic_weather = {
+        disabled = 'Dynamické změny počasí jsou nyní zakázány. ❌',
+        enabled = 'Dynamické změny počasí jsou nyní povoleny. ✅',
+    },
+    time = {
+        frozenc = 'Čas je nyní zamrzlý. ❄️',
+        unfrozenc = 'Čas již není zamrzlý. ☀️',
+        now_frozen = 'Čas je nyní zamrzlý. ❄️',
+        now_unfrozen = 'Čas již není zamrzlý. ☀️',
+        morning = 'Čas nastaven na ráno. 🌅',
+        noon = 'Čas nastaven na poledne. ☀️',
+        evening = 'Čas nastaven na večer. 🌆',
+        night = 'Čas nastaven na noc. 🌙',
+        change = 'Čas byl změněn na %{value}:%{value2}. 🕒',
+        changec = 'Čas byl změněn na: %{value}! ⏰',
+        invalid = 'Neplatná syntaxe, správná syntaxe je: čas <hodina> <minuta> !',
+        invalidc = 'Neplatná syntaxe. Použijte /čas <hodina> <minuta>! ❌',
+        access = 'Přístup k příkazu /čas byl odepřen. ❌',
+    },
+    blackout = {
+        enabled = 'Blackout je nyní povolen. ⚫',
+        enabledc = 'Blackout je nyní povolen. ⚫',
+        disabled = 'Blackout je nyní zakázán. ⚪',
+        disabledc = 'Blackout je nyní zakázán. ⚪',
+    },
+    help = {
+        weathercommand = 'Změnit počasí.',
+        weathertype = 'typ-počasí',
+        availableweather = 'Dostupné typy: extrasunny, clear, neutral, smog, foggy, overcast, clouds, clearing, rain, thunder, snow, blizzard, snowlight, xmas & halloween',
+        timecommand = 'Změnit čas.',
+        timehname = 'hodiny',
+        timemname = 'minuty',
+        timeh = 'Číslo mezi 0 - 23',
+        timem = 'Číslo mezi 0 - 59',
+        freezecommand = 'Zmrazit / odmrazit čas.',
+        freezeweathercommand = 'Povolit/zakázat dynamické změny počasí.',
+        morningcommand = 'Nastavit čas na 09:00. 🌅',
+        nooncommand = 'Nastavit čas na 12:00. ☀️',
+        eveningcommand = 'Nastavit čas na 18:00. 🌆',
+        nightcommand = 'Nastavit čas na 23:00. 🌙',
+        blackoutcommand = 'Přepnout režim blackoutu. ⚫⚪',
+    },
+}
+
+Lang = Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})
